@@ -1,11 +1,7 @@
-* {
+body
+ {
     margin: 0;
     padding: 0;
-    background-color: red; 
+    background-image: url("/css/material-escolar1.jpg");
 }
 
-body,html
-
-{
-    background: url(material-escolar1.jpg);
-}

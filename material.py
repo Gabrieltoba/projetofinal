@@ -45,7 +45,7 @@ def save():
     #Lendo o arquivo"compras.csv" 
     with open('compras.csv', 'rt') as file_in:
         compras = csv.DictReader(file_in)
-    return render_template('index.html', compras=compras)
+        return render_template('index.html', compras=compras)
 
 
 
