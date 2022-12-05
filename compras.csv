@@ -1,5 +1,3 @@
 Id,Material,Quantidade,Preco
-f11fcfb4-03b2-41a8-883b-d495494cd1c5,lapis,"                                     Id  Material  Quantidade  Preco
-0  f11fcfb4-03b2-41a8-883b-d495494cd1c5     lapis           1   10.0
-1  11bd590a-37b7-4f66-92fe-2d971b96fba2  borracha           1    1.0",9
-11bd590a-37b7-4f66-92fe-2d971b96fba2,borracha,1,1.0
+d04fd013-8ecc-4233-a39d-29a69949d371,lapis,"                                     Id Material                                         Quantidade  Preco
+0  d04fd013-8ecc-4233-a39d-29a69949d371    lapis                                       Id Materi...    2.0",266
