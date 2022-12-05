@@ -1,10 +1,10 @@
 # Ao abrir o GitPod, execute:
 # pip install -r material.txt
 
-# Trabalho Final da Disciplina:
+# Trabalho Final da Disciplina Linguagem de Programação:
 # Implementar o delete DONE!
-# Implementar o update (rota para mostrar os dados no form e outra para salvar os dados) DONE!
-# Salvar os dados, conforme forem sendo manipulados, em um arquivo CSV. DONE!
+# Implementar o update (rota para mostrar os dados no form e  para salvar os dados) DONE!
+# Salvar os dados, conforme forem sendo modificados, em um arquivo CSV. DONE!
 
 from flask import Flask, render_template, request
 import pandas as pd
@@ -131,10 +131,5 @@ app.run(debug=True)
 
 # METHOD (API = GET, POST, PUT, DELETE, PATCH, OPTIONS)
 
-# API REST
-# POST   (C)REATE
-# GET    (R)EAD
-# PUT    (U)PDATE
-# PATCH  (U)PDATE PARCIAL
-# DELETE (D)ELETE
+
 
