@@ -68,7 +68,7 @@ def delete(id):
     #função que le o arquivo e envia a variavel para o html.
     with open('compras.csv', 'rt') as file_in:
         compras = csv.DictReader(file_in)
-    return render_template('index.html', compras=compras)
+        return render_template('index.html', compras=compras)
     
 
 #As variaveis da fileiras que o usuario quer modificar e colocar dentro da tabela.
