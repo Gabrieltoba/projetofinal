@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- html stuff -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap stuff -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- css stuff -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/index.css) }}">
+    <title>Material Escolar</title>
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <table class="table table-hover">
+            <tr>
+                <th>material</th>
+                <th>quantidade</th>
+                <th>preco</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+            </tr>
+
+            
+            <tr>
+
+                <td>Lapís</td>
+                <td>2</td>
+                <td>R$10,00</td>
+                <td>Editar</a></td>
+                <td><a href="/delete/{{compra['Id']}}" class="btn btn-sm btn-danger">Apagar</a></td>
+            </tr>
+           
+
+        </table>
+ 
+        <a href="/create" class="btn btn-primary">Adicionar</a>
+
+    </div>
+
+</body>
+
+</html>
