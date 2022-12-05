@@ -4,3 +4,8 @@
     background-color: red; 
 }
 
+body,html
+
+{
+    background: url(material-escolar1.jpg);
+}
