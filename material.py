@@ -85,9 +85,9 @@ def update(id,material,quantidade,preco):#obtem as var pela url
 def saveup():
     #obtem as novas variaveis
     id = request.form['id'] # o id esta ocultado na pagina
-    material = request.form['Material']         
-    quantidade = request.form['Quantidade'] 
-    preco = request.form['Preco']
+    material = request.form['material']         
+    quantidade = request.form['quantidade'] 
+    preco = request.form['preco']
 
     #abre o dataframe do .csv
     quantidade = pd.read_csv("compras.csv")
