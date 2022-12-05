@@ -34,9 +34,9 @@ def create():
 def save():
 
     #puxa as variaveis do forms 
-    material = request.form['material']         
-    quantidade = request.form['quantidade'] 
-    preco = request.form['preço']
+    material = request.form['Material']         
+    quantidade = request.form['Quantidade'] 
+    preco = request.form['Preco']
 
     entrada= []
     entrada.append([uuid4(), material, quantidade,preco]) 
@@ -83,12 +83,11 @@ def update(id,material,quantidade,preco):#obtem as var pela url
 #salva os forms que foram modificados do /update/
 @app.route('/saveup', methods=['POST'])
 def saveup():
-
     #obtem as novas variaveis
     id = request.form['id'] # o id esta ocultado na pagina
-    material = request.form['material']         
-    quantidade = request.form['quantidade'] 
-    preco = request.form['preco']
+    material = request.form['Material']         
+    quantidade = request.form['Quantidade'] 
+    preco = request.form['Preco']
 
     #abre o dataframe do .csv
     quantidade = pd.read_csv("compras.csv")
