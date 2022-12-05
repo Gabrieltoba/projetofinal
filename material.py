@@ -90,21 +90,21 @@ def saveup():
     preco = request.form['preco']
 
     #abre o dataframe do .csv
-    quantidade = pd.read_csv("compras.csv")
+    data = pd.read_csv("compras.csv")
 
     #cria um novo dataframe apartir das novas variaveis
-    new_df = pd.DataFrame({'Id': [id],'Material': [material],'Quantidade': [quantidade],'Preco': [preco]})
+    novo_dataframe = pd.DataFrame({'Id': [id],'Material': [material],'Quantidade': [quantidade],'Preco': [preco]})
 
     #seta os index's para a coluna 'Id'
     #n sei se isso é necessario mas na minha mente faz sentido 
-    quantidade = quantidade.set_index("Id")
-    new_df = new_df.set_index("Id")
+    data = data.set_index("Id")
+    novo_dataframe =  novo_dataframe.set_index("Id")
 
     #atualiza os dados do data frame antigo com o novo
-    quantidade.update(new_df)
+    data.update(novo_dataframe)
 
     #salva o arquivo
-    quantidade.to_csv('compras.csv')
+    data.to_csv('compras.csv')
 
     #redireciona para "/"
     with open('compras.csv', 'rt') as file_in:
